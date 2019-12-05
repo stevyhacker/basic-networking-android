@@ -1,13 +1,14 @@
 package me.amplitudo.networkingapp;
 
-import me.amplitudo.networkingapp.models.City;
+import me.amplitudo.networkingapp.models.SearchResultsResponse;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface ApiService {
 
-    @GET("v2/5de0153c3500008865480b25")
-    Call<City> getCity();
+    @GET("search/anime")
+    Call<SearchResultsResponse> getSearchResults(@Query("q") String query);
 
 
 }
