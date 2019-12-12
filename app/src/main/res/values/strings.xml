@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Networking App</string>
+    <string name="description">Description</string>
 </resources>

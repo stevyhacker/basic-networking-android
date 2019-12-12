@@ -1,6 +1,8 @@
 package me.amplitudo.networkingapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +18,9 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 
 import me.amplitudo.networkingapp.models.Result;
+import me.amplitudo.networkingapp.ui.anime_details.AnimeDetailsActivity;
 
-class AnimeAdapter extends RecyclerView.Adapter<ViewHolder> {
+public class AnimeAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     private Context context;
     private ArrayList<Result> animeResults;
@@ -53,11 +56,9 @@ class AnimeAdapter extends RecyclerView.Adapter<ViewHolder> {
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO add new screen with anime details
-//                Intent intent = new Intent(context, AnimeDetailsActivity.class);
-//                intent.putExtra("anime_id", anime.getMalId());
-//                context.startActivity(intent);
-
+                Intent intent = new Intent(context, AnimeDetailsActivity.class);
+                intent.putExtra("mal_id", anime.getMalId());
+                context.startActivity(intent);
             }
         });
     }

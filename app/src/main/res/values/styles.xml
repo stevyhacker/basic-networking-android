@@ -1,11 +1,19 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Heading" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/heading_text_size</item>
+        <item name="android:paddingBottom">@dimen/heading_padding_bottom</item>
+
+    </style>
+
+    <dimen name="heading_text_size">20sp</dimen>
+    <dimen name="heading_padding_bottom">8dp</dimen>
 </resources>

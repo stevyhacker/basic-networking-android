@@ -1,4 +1,4 @@
-package me.amplitudo.networkingapp;
+package me.amplitudo.networkingapp.ui;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import me.amplitudo.networkingapp.AnimeAdapter;
+import me.amplitudo.networkingapp.R;
 import me.amplitudo.networkingapp.models.Result;
 import me.amplitudo.networkingapp.models.SearchResultsResponse;
 import retrofit2.Call;

@@ -42,9 +42,18 @@ public class Result {
     @SerializedName("members")
     @Expose
     private int members;
-    @SerializedName("rated")
+    @SerializedName("rating")
     @Expose
     private String rated;
+    @SerializedName("duration")
+    @Expose
+    private String duration;
+    @SerializedName("premiered")
+    @Expose
+    private String premiered;
+    @Expose
+    @SerializedName("status")
+    private String status;
 
     public int getMalId() {
         return malId;
@@ -150,4 +159,27 @@ public class Result {
         this.rated = rated;
     }
 
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public String getPremiered() {
+        return premiered;
+    }
+
+    public void setPremiered(String premiered) {
+        this.premiered = premiered;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }
