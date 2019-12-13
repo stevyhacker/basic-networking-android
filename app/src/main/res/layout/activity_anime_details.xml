@@ -40,13 +40,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/transparent_dark_black"
-                android:padding="4dp"
                 android:gravity="center"
+                android:padding="4dp"
                 android:textColor="@color/white"
                 android:textSize="@dimen/title_text_size"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="@+id/anime_detail_thumbnail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/anime_detail_thumbnail"
                 tools:text="Full Anime Title" />
 
